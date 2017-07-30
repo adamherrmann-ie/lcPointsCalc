@@ -186,6 +186,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="h1_button" destination="4XV-71-Gxf" id="qg5-dT-BhE"/>
+                        <outlet property="h2_button" destination="sMC-XL-91j" id="3Q0-ip-Qra"/>
+                        <outlet property="h3_button" destination="DlY-cX-xDV" id="hEy-hy-Jcb"/>
+                        <outlet property="h4_button" destination="SSA-VQ-aiN" id="5Af-ce-xZZ"/>
+                        <outlet property="h5_button" destination="Vlo-JJ-BTD" id="Ejb-qM-VBS"/>
+                        <outlet property="h6_button" destination="Wm0-qm-9zK" id="kn1-BX-No3"/>
+                        <outlet property="h7_button" destination="DwU-bo-bfu" id="bwd-Xd-2RB"/>
+                        <outlet property="h8_button" destination="jgV-Lo-lQs" id="wQC-Gl-nff"/>
                         <outlet property="points_label" destination="RVh-WB-seP" id="Jq9-Tc-Ro9"/>
                     </connections>
                 </viewController>
