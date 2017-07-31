@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var total_points = 0
     var hl_flag = true
@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     let leaving_cert = LeavingCert()
     
     @IBOutlet weak var points_label: UILabel!
+    
+    @IBOutlet weak var subjectsListTable: UITableView!
+    
+    
     
     @IBOutlet weak var h1_button: UIButton!
     @IBOutlet weak var h2_button: UIButton!
@@ -34,7 +38,21 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return leaving_cert.points_array.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = String(leaving_cert.points_array[indexPath.row])
+        
+        return cell
+    }
+    
+    
     
     @IBAction func buttonPress(_ sender: UIButton) {
         
