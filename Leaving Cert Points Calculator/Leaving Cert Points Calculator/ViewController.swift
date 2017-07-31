@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = String(leaving_cert.points_array[indexPath.row])
+        cell.textLabel?.text = leaving_cert.label_array[indexPath.row]
         
         return cell
     }
@@ -55,6 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
             leaving_cert.points_array.remove(at: indexPath.row)
+            leaving_cert.label_array.remove(at: indexPath.row)
             subjectsListTable.reloadData()
             total_points = leaving_cert.getTotalPoints()
             points_label.text = String(total_points)
@@ -67,55 +68,55 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         switch sender.tag {
         case 1:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 100)
+                total_points = leaving_cert.addSubject(points: 100, label: "H1: 100")
             } else {
-                total_points = leaving_cert.addSubject(points: 56)
+                total_points = leaving_cert.addSubject(points: 56, label: "O1: 56")
             }
         case 2:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 88)
+                total_points = leaving_cert.addSubject(points: 88, label: "H2: 88")
             } else {
-                total_points = leaving_cert.addSubject(points: 46)
+                total_points = leaving_cert.addSubject(points: 46, label: "O2: 46")
             }
         case 3:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 77)
+                total_points = leaving_cert.addSubject(points: 77, label: "H3: 77")
             } else {
-                total_points = leaving_cert.addSubject(points: 37)
+                total_points = leaving_cert.addSubject(points: 37, label: "O3: 37")
             }
         case 4:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 66)
+                total_points = leaving_cert.addSubject(points: 66, label: "H4: 66")
             } else {
-                total_points = leaving_cert.addSubject(points: 28)
+                total_points = leaving_cert.addSubject(points: 28, label: "O4: 28")
             }
         case 5:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 56)
+                total_points = leaving_cert.addSubject(points: 56, label: "H5: 56")
             } else {
-                total_points = leaving_cert.addSubject(points: 20)
+                total_points = leaving_cert.addSubject(points: 20, label: "O5: 20")
             }
         case 6:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 46)
+                total_points = leaving_cert.addSubject(points: 46, label: "H6: 46")
             } else {
-                total_points = leaving_cert.addSubject(points: 12)
+                total_points = leaving_cert.addSubject(points: 12, label: "O6: 12")
 
             }
         case 7:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 37)
+                total_points = leaving_cert.addSubject(points: 37, label: "H7: 37")
 
             } else {
-                total_points = leaving_cert.addSubject(points: 0)
+                total_points = leaving_cert.addSubject(points: 0, label: "O7: 0")
 
             }
         case 8:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 0)
+                total_points = leaving_cert.addSubject(points: 0, label: "H8: 0")
 
             } else {
-                total_points = leaving_cert.addSubject(points: 0)
+                total_points = leaving_cert.addSubject(points: 0, label: "O8: 0")
 
             }
         case 20: // Switch level
@@ -146,11 +147,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 10:        // Reset
             total_points = leaving_cert.reset()
         case 11:        // Pass
-            total_points = leaving_cert.addSubject(points: 28)
+            total_points = leaving_cert.addSubject(points: 28, label: "Pass: 28")
         case 12:        // Merit
-            total_points = leaving_cert.addSubject(points: 46)
+            total_points = leaving_cert.addSubject(points: 46, label: "Merit: 46")
         case 13:        // Distinction
-            total_points = leaving_cert.addSubject(points: 66)
+            total_points = leaving_cert.addSubject(points: 66, label: "Distinction: 66")
         default:
             total_points = 0
         }
