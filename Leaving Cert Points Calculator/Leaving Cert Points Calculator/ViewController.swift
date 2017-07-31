@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     var total_points = 0
     var hl_flag = true
-    var prev_value = 0
+    
+    let leaving_cert = LeavingCert()
     
     @IBOutlet weak var points_label: UILabel!
     
@@ -40,67 +41,56 @@ class ViewController: UIViewController {
         switch sender.tag {
         case 1:
             if hl_flag {
-                total_points = total_points + 100
-                prev_value = 100
+                total_points = leaving_cert.addSubject(points: 100)
             } else {
-                total_points = total_points + 56
-                prev_value = 56
+                total_points = leaving_cert.addSubject(points: 56)
             }
         case 2:
             if hl_flag {
-                total_points = total_points + 88
-                prev_value = 88
+                total_points = leaving_cert.addSubject(points: 88)
             } else {
-                total_points = total_points + 46
-                prev_value = 46
+                total_points = leaving_cert.addSubject(points: 46)
             }
         case 3:
             if hl_flag {
-                total_points = total_points + 77
-                prev_value = 77
+                total_points = leaving_cert.addSubject(points: 77)
             } else {
-                total_points = total_points + 37
-                prev_value = 37
+                total_points = leaving_cert.addSubject(points: 37)
             }
         case 4:
             if hl_flag {
-                total_points = total_points + 66
-                prev_value = 66
+                total_points = leaving_cert.addSubject(points: 66)
             } else {
-                total_points = total_points + 28
-                prev_value = 28
+                total_points = leaving_cert.addSubject(points: 28)
             }
         case 5:
             if hl_flag {
-                total_points = total_points + 56
-                prev_value = 56
+                total_points = leaving_cert.addSubject(points: 56)
             } else {
-                total_points = total_points + 20
-                prev_value = 20
+                total_points = leaving_cert.addSubject(points: 20)
             }
         case 6:
             if hl_flag {
-                total_points = total_points + 46
-                prev_value = 46
+                total_points = leaving_cert.addSubject(points: 46)
             } else {
-                total_points = total_points + 12
-                prev_value = 12
+                total_points = leaving_cert.addSubject(points: 12)
+
             }
         case 7:
             if hl_flag {
-                total_points = total_points + 37
-                prev_value = 37
+                total_points = leaving_cert.addSubject(points: 37)
+
             } else {
-                total_points = total_points + 0
-                prev_value = 0
+                total_points = leaving_cert.addSubject(points: 0)
+
             }
         case 8:
             if hl_flag {
-                total_points = total_points + 0
-                prev_value = 0
+                total_points = leaving_cert.addSubject(points: 0)
+
             } else {
-                total_points = total_points + 0
-                prev_value = 0
+                total_points = leaving_cert.addSubject(points: 0)
+
             }
         case 20: // Switch level
             if hl_flag {
@@ -125,16 +115,24 @@ class ViewController: UIViewController {
                 h7_button.setTitle("H7", for: .normal)
                 h8_button.setTitle("H8", for: .normal)
             }
-        case 25:
-            if ((hl_flag) && (prev_value > 45)) {
-                total_points = total_points + 25
-            }
-        case 10:
-            total_points = 0
+        case 25:        // Add maths bonus points
+            total_points = leaving_cert.addMathsBonus()
+        case 10:        // Reset
+            total_points = leaving_cert.reset()
+        case 11:        // Pass
+            total_points = leaving_cert.addSubject(points: 28)
+        case 12:        // Merit
+            total_points = leaving_cert.addSubject(points: 46)
+        case 13:        // Distinction
+            total_points = leaving_cert.addSubject(points: 66)
         default:
             total_points = 0
         }
         points_label.text = String(total_points)
+    }
+    
+    func addValue(points: Int) {
+        
     }
     
 

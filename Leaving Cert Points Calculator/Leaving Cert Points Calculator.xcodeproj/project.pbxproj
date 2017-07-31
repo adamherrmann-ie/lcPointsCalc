@@ -14,6 +14,7 @@
 		662946C71F2AA65E00C8F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662946C51F2AA65E00C8F453 /* LaunchScreen.storyboard */; };
 		662946D21F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662946D11F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift */; };
 		662946DD1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */; };
+		668C8D6A1F2FB844000E3FB3 /* LeavingCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C8D691F2FB844000E3FB3 /* LeavingCert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		662946D81F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leaving Cert Points CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaving_Cert_Points_CalculatorUITests.swift; sourceTree = "<group>"; };
 		662946DE1F2AA65E00C8F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668C8D691F2FB844000E3FB3 /* LeavingCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeavingCert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				662946C31F2AA65E00C8F453 /* Assets.xcassets */,
 				662946C51F2AA65E00C8F453 /* LaunchScreen.storyboard */,
 				662946C81F2AA65E00C8F453 /* Info.plist */,
+				668C8D691F2FB844000E3FB3 /* LeavingCert.swift */,
 			);
 			path = "Leaving Cert Points Calculator";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668C8D6A1F2FB844000E3FB3 /* LeavingCert.swift in Sources */,
 				662946BF1F2AA65E00C8F453 /* ViewController.swift in Sources */,
 				662946BD1F2AA65E00C8F453 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				662946E31F2AA65E00C8F453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		662946E41F2AA65E00C8F453 /* Build configuration list for PBXNativeTarget "Leaving Cert Points CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				662946E61F2AA65E00C8F453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		662946E71F2AA65E00C8F453 /* Build configuration list for PBXNativeTarget "Leaving Cert Points CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				662946E91F2AA65E00C8F453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
