@@ -10,7 +10,7 @@ import Foundation
 
 class LeavingCert {
     
-    var points_array = [0]
+    var points_array = [Int]()
     
     func addSubject(points: Int) -> Int {
         points_array.append(points)

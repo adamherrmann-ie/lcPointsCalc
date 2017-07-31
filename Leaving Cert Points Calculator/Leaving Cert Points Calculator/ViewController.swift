@@ -52,7 +52,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            leaving_cert.points_array.remove(at: indexPath.row)
+            subjectsListTable.reloadData()
+            total_points = leaving_cert.getTotalPoints()
+            points_label.text = String(total_points)
+            
+        }
+    }
     
     @IBAction func buttonPress(_ sender: UIButton) {
         
@@ -147,6 +155,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             total_points = 0
         }
         points_label.text = String(total_points)
+        subjectsListTable.reloadData()
     }
     
     func addValue(points: Int) {
