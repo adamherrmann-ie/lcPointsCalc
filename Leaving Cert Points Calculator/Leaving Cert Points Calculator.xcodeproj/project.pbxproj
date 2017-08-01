@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					662946B81F2AA65D00C8F453 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SV5MN7MWC8;
 						ProvisioningStyle = Automatic;
 					};
 					662946CC1F2AA65E00C8F453 = {
@@ -416,11 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SV5MN7MWC8;
 				INFOPLIST_FILE = "Leaving Cert Points Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,11 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SV5MN7MWC8;
 				INFOPLIST_FILE = "Leaving Cert Points Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
