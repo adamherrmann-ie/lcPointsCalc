@@ -46,6 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         higher_button.isEnabled = false
         higher_button.setTitleColor(UIColor.darkGray, for: .normal)
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -169,13 +170,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 20: // Ordinary Level
             
             hl_flag = false
-            hl_maths_flag = false
             ordinary_button.isEnabled = false
             higher_button.isEnabled = true
-            hl_maths_button.isEnabled = true
+            if !(hl_maths_added) {
+                hl_maths_button.isEnabled = true
+                hl_maths_button.setTitleColor(my_blue, for: .normal)
+                hl_maths_flag = false
+            }
             higher_button.setTitleColor(my_blue, for: .normal)
             ordinary_button.setTitleColor(UIColor.darkGray, for: .normal)
-            hl_maths_button.setTitleColor(my_blue, for: .normal)
             h1_button.setTitle("O1", for: .normal)
             h2_button.setTitle("O2", for: .normal)
             h3_button.setTitle("O3", for: .normal)
@@ -203,13 +206,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             h8_button.setTitle("HM8", for: .normal)
         case 31:
             hl_flag = true
-            hl_maths_flag = false
+            if !(hl_maths_added) {
+                hl_maths_flag = false
+                hl_maths_button.isEnabled = true
+                hl_maths_button.setTitleColor(my_blue, for: .normal)
+            }
             ordinary_button.isEnabled = true
             higher_button.isEnabled = false
-            hl_maths_button.isEnabled = true
             higher_button.setTitleColor(UIColor.darkGray, for: .normal)
             ordinary_button.setTitleColor(my_blue, for: .normal)
-            hl_maths_button.setTitleColor(my_blue, for: .normal)
             h1_button.setTitle("H1", for: .normal)
             h2_button.setTitle("H2", for: .normal)
             h3_button.setTitle("H3", for: .normal)
@@ -223,7 +228,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if lcvp_flag {
                 toggleLCVP()
             }
-            if hl_maths_flag {
+            if hl_maths_added {
                 toggleHLMaths()
             }
         case 13:        // Pass
@@ -235,11 +240,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 11:        // Distinction
             total_points = leaving_cert.addSubject(points: 66, label: "LCVP Distinction: 66")
             toggleLCVP()
+        case 500:
+            shareButton()
         default:
             total_points = 0
         }
         points_label.text = String(total_points)
         subjectsListTable.reloadData()
+    }
+    
+    func shareButton() {
+        let text_to_share = "I got " + String(total_points) + " in my Leaving Cert!"
+        let activity = UIActivityViewController(activityItems: [text_to_share], applicationActivities: nil)
+        activity.popoverPresentationController?.sourceView = self.view
+        self.present(activity, animated: true, completion: nil)
     }
     
     func toggleLCVP() {
