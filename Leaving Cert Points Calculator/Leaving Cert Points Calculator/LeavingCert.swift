@@ -52,4 +52,8 @@ class LeavingCert {
         
         return getTotalPoints()
     }
+    
+    func getSubjectCount() -> Int {
+        return points_array.count
+    }
 }

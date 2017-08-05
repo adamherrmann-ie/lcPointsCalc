@@ -14,6 +14,7 @@
 		662946C71F2AA65E00C8F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662946C51F2AA65E00C8F453 /* LaunchScreen.storyboard */; };
 		662946D21F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662946D11F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift */; };
 		662946DD1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */; };
+		665E33721F3647F900C82628 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E33711F3647F900C82628 /* InfoViewController.swift */; };
 		668C8D6A1F2FB844000E3FB3 /* LeavingCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C8D691F2FB844000E3FB3 /* LeavingCert.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		662946D81F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leaving Cert Points CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaving_Cert_Points_CalculatorUITests.swift; sourceTree = "<group>"; };
 		662946DE1F2AA65E00C8F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665E33711F3647F900C82628 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		668C8D691F2FB844000E3FB3 /* LeavingCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeavingCert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				662946C51F2AA65E00C8F453 /* LaunchScreen.storyboard */,
 				662946C81F2AA65E00C8F453 /* Info.plist */,
 				668C8D691F2FB844000E3FB3 /* LeavingCert.swift */,
+				665E33711F3647F900C82628 /* InfoViewController.swift */,
 			);
 			path = "Leaving Cert Points Calculator";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				668C8D6A1F2FB844000E3FB3 /* LeavingCert.swift in Sources */,
 				662946BF1F2AA65E00C8F453 /* ViewController.swift in Sources */,
+				665E33721F3647F900C82628 /* InfoViewController.swift in Sources */,
 				662946BD1F2AA65E00C8F453 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

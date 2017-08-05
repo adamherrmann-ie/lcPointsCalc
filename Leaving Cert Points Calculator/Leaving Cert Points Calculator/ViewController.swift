@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var subjectsListTable: UITableView!
     
+    @IBOutlet weak var subjectListLabel: UILabel!
     
     
     @IBOutlet weak var h1_button: UIButton!
@@ -48,6 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         higher_button.setTitleColor(UIColor.darkGray, for: .normal)
         UIApplication.shared.statusBarStyle = .lightContent
         subjectsListTable.backgroundColor = UIColor.black
+        subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,6 +82,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             subjectsListTable.reloadData()
             total_points = leaving_cert.getTotalPoints()
             points_label.text = String(total_points)
+            subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
             
         }
     }
@@ -174,10 +177,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             hl_flag = false
             ordinary_button.isEnabled = false
             higher_button.isEnabled = true
+            hl_maths_flag = false
             if !(hl_maths_added) {
                 hl_maths_button.isEnabled = true
                 hl_maths_button.setTitleColor(my_blue, for: .normal)
-                hl_maths_flag = false
             }
             higher_button.setTitleColor(my_blue, for: .normal)
             ordinary_button.setTitleColor(UIColor.darkGray, for: .normal)
@@ -209,10 +212,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 31:
             hl_flag = true
             if !(hl_maths_added) {
-                hl_maths_flag = false
                 hl_maths_button.isEnabled = true
                 hl_maths_button.setTitleColor(my_blue, for: .normal)
             }
+            hl_maths_flag = false
             ordinary_button.isEnabled = true
             higher_button.isEnabled = false
             higher_button.setTitleColor(UIColor.darkGray, for: .normal)
@@ -242,6 +245,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 11:        // Distinction
             total_points = leaving_cert.addSubject(points: 66, label: "LCVP Distinction: 66")
             toggleLCVP()
+        case 35:
+            infoButton()
         case 500:
             shareButton()
         default:
@@ -249,6 +254,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         points_label.text = String(total_points)
         subjectsListTable.reloadData()
+        subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
     }
     
     func shareButton() {
@@ -290,6 +296,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             hl_maths_button.setTitleColor(UIColor.darkGray, for: .normal)
             hl_maths_button.isEnabled = false
         }
+    }
+    
+    func infoButton() {
+        
     }
     
 
