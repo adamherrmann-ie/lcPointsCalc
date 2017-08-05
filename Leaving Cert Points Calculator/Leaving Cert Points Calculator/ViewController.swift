@@ -47,6 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         higher_button.isEnabled = false
         higher_button.setTitleColor(UIColor.darkGray, for: .normal)
         UIApplication.shared.statusBarStyle = .lightContent
+        subjectsListTable.backgroundColor = UIColor.black
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,7 +63,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = leaving_cert.label_array[indexPath.row]
-        
+        cell.backgroundColor = UIColor.black
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
