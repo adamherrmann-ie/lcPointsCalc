@@ -217,6 +217,7 @@
                             <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFQ-hX-CuB">
                                 <rect key="frame" x="29" y="257" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Higher">
                                     <color key="titleColor" red="0.10980392160000001" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

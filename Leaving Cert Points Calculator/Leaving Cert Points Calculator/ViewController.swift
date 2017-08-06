@@ -46,7 +46,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         higher_button.isEnabled = false
-        higher_button.setTitleColor(UIColor.darkGray, for: .normal)
         UIApplication.shared.statusBarStyle = .lightContent
         subjectsListTable.backgroundColor = UIColor.black
         subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
@@ -182,8 +181,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 hl_maths_button.isEnabled = true
                 hl_maths_button.setTitleColor(my_blue, for: .normal)
             }
-            higher_button.setTitleColor(my_blue, for: .normal)
-            ordinary_button.setTitleColor(UIColor.darkGray, for: .normal)
             h1_button.setTitle("O1", for: .normal)
             h2_button.setTitle("O2", for: .normal)
             h3_button.setTitle("O3", for: .normal)
@@ -198,9 +195,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             ordinary_button.isEnabled = true
             higher_button.isEnabled = true
             hl_maths_button.isEnabled = false
-            higher_button.setTitleColor(my_blue, for: .normal)
-            ordinary_button.setTitleColor(my_blue, for: .normal)
-            hl_maths_button.setTitleColor(UIColor.darkGray, for: .normal)
             h1_button.setTitle("HM1", for: .normal)
             h2_button.setTitle("HM2", for: .normal)
             h3_button.setTitle("HM3", for: .normal)
@@ -218,8 +212,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             hl_maths_flag = false
             ordinary_button.isEnabled = true
             higher_button.isEnabled = false
-            higher_button.setTitleColor(UIColor.darkGray, for: .normal)
-            ordinary_button.setTitleColor(my_blue, for: .normal)
             h1_button.setTitle("H1", for: .normal)
             h2_button.setTitle("H2", for: .normal)
             h3_button.setTitle("H3", for: .normal)
