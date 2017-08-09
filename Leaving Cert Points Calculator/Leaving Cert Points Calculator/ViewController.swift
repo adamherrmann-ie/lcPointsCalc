@@ -250,7 +250,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func shareButton() {
-        let text_to_share = "I got " + String(total_points) + " in my Leaving Cert!"
+        let text_to_share = "I got " + String(total_points) + " points in my Leaving Cert!"
         let activity = UIActivityViewController(activityItems: [text_to_share], applicationActivities: nil)
         activity.popoverPresentationController?.sourceView = self.view
         self.present(activity, animated: true, completion: nil)
