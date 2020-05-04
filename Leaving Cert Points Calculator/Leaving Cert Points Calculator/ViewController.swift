@@ -46,7 +46,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         higher_button.isEnabled = false
-        UIApplication.shared.statusBarStyle = .lightContent
         subjectsListTable.backgroundColor = UIColor.black
         subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
     }
@@ -62,15 +61,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = leaving_cert.label_array[indexPath.row]
         cell.backgroundColor = UIColor.black
         cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.delete {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
             if (leaving_cert.label_array[indexPath.row].contains("LCVP")) {
                 toggleLCVP()
             } else if (leaving_cert.label_array[indexPath.row].contains("Maths Bonus")) {

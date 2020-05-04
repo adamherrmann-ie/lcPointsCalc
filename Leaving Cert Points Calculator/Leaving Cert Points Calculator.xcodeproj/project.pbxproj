@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,28 +12,9 @@
 		662946C21F2AA65E00C8F453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662946C01F2AA65E00C8F453 /* Main.storyboard */; };
 		662946C41F2AA65E00C8F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662946C31F2AA65E00C8F453 /* Assets.xcassets */; };
 		662946C71F2AA65E00C8F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662946C51F2AA65E00C8F453 /* LaunchScreen.storyboard */; };
-		662946D21F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662946D11F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift */; };
-		662946DD1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */; };
 		665E33721F3647F900C82628 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E33711F3647F900C82628 /* InfoViewController.swift */; };
 		668C8D6A1F2FB844000E3FB3 /* LeavingCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C8D691F2FB844000E3FB3 /* LeavingCert.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		662946CE1F2AA65E00C8F453 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 662946B11F2AA65D00C8F453 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 662946B81F2AA65D00C8F453;
-			remoteInfo = "Leaving Cert Points Calculator";
-		};
-		662946D91F2AA65E00C8F453 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 662946B11F2AA65D00C8F453 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 662946B81F2AA65D00C8F453;
-			remoteInfo = "Leaving Cert Points Calculator";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		662946B91F2AA65D00C8F453 /* Leaving Cert Points Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leaving Cert Points Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,32 +24,12 @@
 		662946C31F2AA65E00C8F453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		662946C61F2AA65E00C8F453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		662946C81F2AA65E00C8F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		662946CD1F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leaving Cert Points CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		662946D11F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaving_Cert_Points_CalculatorTests.swift; sourceTree = "<group>"; };
-		662946D31F2AA65E00C8F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		662946D81F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leaving Cert Points CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaving_Cert_Points_CalculatorUITests.swift; sourceTree = "<group>"; };
-		662946DE1F2AA65E00C8F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665E33711F3647F900C82628 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		668C8D691F2FB844000E3FB3 /* LeavingCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeavingCert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		662946B61F2AA65D00C8F453 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		662946CA1F2AA65E00C8F453 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		662946D51F2AA65E00C8F453 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				662946BB1F2AA65D00C8F453 /* Leaving Cert Points Calculator */,
-				662946D01F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests */,
-				662946DB1F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests */,
 				662946BA1F2AA65D00C8F453 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				662946B91F2AA65D00C8F453 /* Leaving Cert Points Calculator.app */,
-				662946CD1F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests.xctest */,
-				662946D81F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,24 +68,6 @@
 				665E33711F3647F900C82628 /* InfoViewController.swift */,
 			);
 			path = "Leaving Cert Points Calculator";
-			sourceTree = "<group>";
-		};
-		662946D01F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				662946D11F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift */,
-				662946D31F2AA65E00C8F453 /* Info.plist */,
-			);
-			path = "Leaving Cert Points CalculatorTests";
-			sourceTree = "<group>";
-		};
-		662946DB1F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				662946DC1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift */,
-				662946DE1F2AA65E00C8F453 /* Info.plist */,
-			);
-			path = "Leaving Cert Points CalculatorUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,42 +90,6 @@
 			productReference = 662946B91F2AA65D00C8F453 /* Leaving Cert Points Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		662946CC1F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 662946E41F2AA65E00C8F453 /* Build configuration list for PBXNativeTarget "Leaving Cert Points CalculatorTests" */;
-			buildPhases = (
-				662946C91F2AA65E00C8F453 /* Sources */,
-				662946CA1F2AA65E00C8F453 /* Frameworks */,
-				662946CB1F2AA65E00C8F453 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				662946CF1F2AA65E00C8F453 /* PBXTargetDependency */,
-			);
-			name = "Leaving Cert Points CalculatorTests";
-			productName = "Leaving Cert Points CalculatorTests";
-			productReference = 662946CD1F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		662946D71F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 662946E71F2AA65E00C8F453 /* Build configuration list for PBXNativeTarget "Leaving Cert Points CalculatorUITests" */;
-			buildPhases = (
-				662946D41F2AA65E00C8F453 /* Sources */,
-				662946D51F2AA65E00C8F453 /* Frameworks */,
-				662946D61F2AA65E00C8F453 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				662946DA1F2AA65E00C8F453 /* PBXTargetDependency */,
-			);
-			name = "Leaving Cert Points CalculatorUITests";
-			productName = "Leaving Cert Points CalculatorUITests";
-			productReference = 662946D81F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Adam Herrmann";
 				TargetAttributes = {
 					662946B81F2AA65D00C8F453 = {
@@ -202,21 +105,11 @@
 						DevelopmentTeam = SV5MN7MWC8;
 						ProvisioningStyle = Automatic;
 					};
-					662946CC1F2AA65E00C8F453 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 662946B81F2AA65D00C8F453;
-					};
-					662946D71F2AA65E00C8F453 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 662946B81F2AA65D00C8F453;
-					};
 				};
 			};
 			buildConfigurationList = 662946B41F2AA65D00C8F453 /* Build configuration list for PBXProject "Leaving Cert Points Calculator" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -228,8 +121,6 @@
 			projectRoot = "";
 			targets = (
 				662946B81F2AA65D00C8F453 /* Leaving Cert Points Calculator */,
-				662946CC1F2AA65E00C8F453 /* Leaving Cert Points CalculatorTests */,
-				662946D71F2AA65E00C8F453 /* Leaving Cert Points CalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,20 +133,6 @@
 				662946C71F2AA65E00C8F453 /* LaunchScreen.storyboard in Resources */,
 				662946C41F2AA65E00C8F453 /* Assets.xcassets in Resources */,
 				662946C21F2AA65E00C8F453 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		662946CB1F2AA65E00C8F453 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		662946D61F2AA65E00C8F453 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,36 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		662946C91F2AA65E00C8F453 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				662946D21F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		662946D41F2AA65E00C8F453 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				662946DD1F2AA65E00C8F453 /* Leaving_Cert_Points_CalculatorUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		662946CF1F2AA65E00C8F453 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 662946B81F2AA65D00C8F453 /* Leaving Cert Points Calculator */;
-			targetProxy = 662946CE1F2AA65E00C8F453 /* PBXContainerItemProxy */;
-		};
-		662946DA1F2AA65E00C8F453 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 662946B81F2AA65D00C8F453 /* Leaving Cert Points Calculator */;
-			targetProxy = 662946D91F2AA65E00C8F453 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		662946C01F2AA65E00C8F453 /* Main.storyboard */ = {
@@ -328,20 +176,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -364,13 +221,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,20 +236,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -408,11 +275,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -421,12 +291,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = SV5MN7MWC8;
 				INFOPLIST_FILE = "Leaving Cert Points Calculator/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -435,67 +311,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = SV5MN7MWC8;
 				INFOPLIST_FILE = "Leaving Cert Points Calculator/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		662946E51F2AA65E00C8F453 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Leaving Cert Points CalculatorTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-CalculatorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leaving Cert Points Calculator.app/Leaving Cert Points Calculator";
-			};
-			name = Debug;
-		};
-		662946E61F2AA65E00C8F453 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Leaving Cert Points CalculatorTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-CalculatorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leaving Cert Points Calculator.app/Leaving Cert Points Calculator";
-			};
-			name = Release;
-		};
-		662946E81F2AA65E00C8F453 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "Leaving Cert Points CalculatorUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-CalculatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Leaving Cert Points Calculator";
-			};
-			name = Debug;
-		};
-		662946E91F2AA65E00C8F453 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "Leaving Cert Points CalculatorUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ie.adamherrmann.Leaving-Cert-Points-CalculatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Leaving Cert Points Calculator";
 			};
 			name = Release;
 		};
@@ -516,24 +344,6 @@
 			buildConfigurations = (
 				662946E21F2AA65E00C8F453 /* Debug */,
 				662946E31F2AA65E00C8F453 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		662946E41F2AA65E00C8F453 /* Build configuration list for PBXNativeTarget "Leaving Cert Points CalculatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				662946E51F2AA65E00C8F453 /* Debug */,
-				662946E61F2AA65E00C8F453 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		662946E71F2AA65E00C8F453 /* Build configuration list for PBXNativeTarget "Leaving Cert Points CalculatorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				662946E81F2AA65E00C8F453 /* Debug */,
-				662946E91F2AA65E00C8F453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
