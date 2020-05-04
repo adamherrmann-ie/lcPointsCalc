@@ -270,8 +270,8 @@
                         <outlet property="ordinary_button" destination="FVZ-Wz-vtC" id="fnI-Kw-R0P"/>
                         <outlet property="pass_button" destination="hTS-24-bz3" id="jb3-EY-unU"/>
                         <outlet property="points_label" destination="RVh-WB-seP" id="Jq9-Tc-Ro9"/>
-                        <outlet property="subjectListLabel" destination="9yM-ra-NtS" id="AmK-Hp-XxB"/>
-                        <outlet property="subjectsListTable" destination="5Ak-6o-pTC" id="3bm-UI-HBu"/>
+                        <outlet property="subject_list_label" destination="9yM-ra-NtS" id="AmK-Hp-XxB"/>
+                        <outlet property="subjects_list_table" destination="5Ak-6o-pTC" id="3bm-UI-HBu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -399,9 +399,9 @@
                         <color key="backgroundColor" red="0.074509803921568626" green="0.41176470588235292" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="higherLabel" destination="R4q-dY-iPs" id="zSl-dz-I4Y"/>
-                        <outlet property="ordinaryLabel" destination="8qX-Cx-MXA" id="33V-QA-BbQ"/>
-                        <outlet property="percentageLabel" destination="4T1-S1-vze" id="PFj-7b-UW6"/>
+                        <outlet property="higher_label" destination="R4q-dY-iPs" id="zSl-dz-I4Y"/>
+                        <outlet property="ordinary_label" destination="8qX-Cx-MXA" id="33V-QA-BbQ"/>
+                        <outlet property="percentage_label" destination="4T1-S1-vze" id="PFj-7b-UW6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9v-Ts-6oR" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
+{
     var total_points = 0
     var hl_flag = true
     var lcvp_flag = false
@@ -40,7 +40,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var pass_button: UIButton!
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         higher_button.isEnabled = false
@@ -48,17 +49,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         subject_list_label.text = ("Subject List (" + String(leaving_cert.get_subject_count()) + "):")
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return leaving_cert.points_array.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = leaving_cert.label_array[indexPath.row]
         cell.backgroundColor = UIColor.black
@@ -66,11 +70,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCell.EditingStyle.delete {
-            if (leaving_cert.label_array[indexPath.row].contains("LCVP")) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == UITableViewCell.EditingStyle.delete
+        {
+            if (leaving_cert.label_array[indexPath.row].contains("LCVP"))
+            {
                 toggleLCVP()
-            } else if (leaving_cert.label_array[indexPath.row].contains("Maths Bonus")) {
+            } else if (leaving_cert.label_array[indexPath.row].contains("Maths Bonus"))
+            {
                 toggleHLMaths()
             }
             leaving_cert.points_array.remove(at: indexPath.row)
@@ -85,27 +93,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func buttonPress(_ sender: UIButton) {
         
-        switch sender.tag {
+        switch sender.tag
+        {
         case 1:
-            if hl_flag {
-                if hl_maths_flag {
+            if hl_flag
+            {
+                if hl_maths_flag
+                {
                     total_points = leaving_cert.add_subject(points: 125, label: "H1 + Maths Bonus: 125")
                     toggleHLMaths()
-                } else {
+                }
+                else
+                {
                     total_points = leaving_cert.add_subject(points: 100, label: "H1: 100")
                 }
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 56, label: "O1: 56")
             }
         case 2:
-            if hl_flag {
-                if hl_maths_flag {
+            if hl_flag
+            {
+                if hl_maths_flag
+                {
                     total_points = leaving_cert.add_subject(points: 113, label: "H2 + Maths Bonus: 113")
                     toggleHLMaths()
-                } else {
+                }
+                else
+                {
                     total_points = leaving_cert.add_subject(points: 88, label: "H2: 88")
                 }
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 46, label: "O2: 46")
             }
         case 3:
@@ -113,60 +134,84 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 if hl_maths_flag {
                     total_points = leaving_cert.add_subject(points: 102, label: "H3 + Maths Bonus: 102")
                     toggleHLMaths()
-                } else {
+                }
+                else
+                {
                     total_points = leaving_cert.add_subject(points: 77, label: "H3: 77")
                 }
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 37, label: "O3: 37")
             }
         case 4:
             if hl_flag {
-                if hl_maths_flag {
+                if hl_maths_flag
+                {
                     total_points = leaving_cert.add_subject(points: 91, label: "H4 + Maths Bonus: 91")
                     toggleHLMaths()
-                } else {
+                }
+                else
+                {
                     total_points = leaving_cert.add_subject(points: 66, label: "H4: 66")
                 }
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 28, label: "O4: 28")
             }
         case 5:
-            if hl_flag {
-                if hl_maths_flag {
+            if hl_flag
+            {
+                if hl_maths_flag
+                {
                     total_points = leaving_cert.add_subject(points: 81, label: "H5 + Maths Bonus: 81")
                     toggleHLMaths()
-                } else {
+                }
+                else
+                {
                     total_points = leaving_cert.add_subject(points: 56, label: "H5: 56")
                 }
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 20, label: "O5: 20")
             }
         case 6:
-            if hl_flag {
-                if hl_maths_flag {
+            if hl_flag
+            {
+                if hl_maths_flag
+                {
                     total_points = leaving_cert.add_subject(points: 71, label: "H6 + Maths Bonus: 71")
                     toggleHLMaths()
-                } else {
+                }
+                else
+                {
                     total_points = leaving_cert.add_subject(points: 46, label: "H6: 46")
                 }
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 12, label: "O6: 12")
-
             }
         case 7:
-            if hl_flag {
+            if hl_flag
+            {
                 total_points = leaving_cert.add_subject(points: 37, label: "H7: 37")
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 0, label: "O7: 0")
-
             }
         case 8:
-            if hl_flag {
+            if hl_flag
+            {
                 total_points = leaving_cert.add_subject(points: 0, label: "H8: 0")
 
-            } else {
+            }
+            else
+            {
                 total_points = leaving_cert.add_subject(points: 0, label: "O8: 0")
-
             }
         case 20: // Ordinary Level
             
@@ -174,7 +219,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             ordinary_button.isEnabled = false
             higher_button.isEnabled = true
             hl_maths_flag = false
-            if !(hl_maths_added) {
+            if !(hl_maths_added)
+            {
                 hl_maths_button.isEnabled = true
                 hl_maths_button.setTitleColor(my_blue, for: .normal)
             }
@@ -202,7 +248,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             h8_button.setTitle("HM8", for: .normal)
         case 31:
             hl_flag = true
-            if !(hl_maths_added) {
+            if !(hl_maths_added)
+            {
                 hl_maths_button.isEnabled = true
                 hl_maths_button.setTitleColor(my_blue, for: .normal)
             }
@@ -219,10 +266,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             h8_button.setTitle("H8", for: .normal)
         case 10:        // Reset
             total_points = leaving_cert.reset()
-            if lcvp_flag {
+            if lcvp_flag
+            {
                 toggleLCVP()
             }
-            if hl_maths_added {
+            if hl_maths_added
+            {
                 toggleHLMaths()
             }
         case 13:        // Pass
@@ -246,15 +295,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         subject_list_label.text = ("Subject List (" + String(leaving_cert.get_subject_count()) + "):")
     }
     
-    func shareButton() {
+    func shareButton()
+    {
         let text_to_share = "I got " + String(total_points) + " points in my Leaving Cert!"
         let activity = UIActivityViewController(activityItems: [text_to_share], applicationActivities: nil)
         activity.popoverPresentationController?.sourceView = self.view
         self.present(activity, animated: true, completion: nil)
     }
     
-    func toggleLCVP() {
-        if (lcvp_flag) {
+    func toggleLCVP()
+    {
+        if (lcvp_flag)
+        {
             lcvp_flag = false
             merit_button.isEnabled = true
             merit_button.setTitleColor(my_blue, for: .normal)
@@ -262,7 +314,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             distinction_button.setTitleColor(my_blue, for: .normal)
             pass_button.isEnabled = true
             pass_button.setTitleColor(my_blue, for: .normal)
-        } else {
+        }
+        else
+        {
             lcvp_flag = true
             merit_button.isEnabled = false
             merit_button.setTitleColor(UIColor.darkGray, for: .normal)
@@ -271,15 +325,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             pass_button.isEnabled = false
             pass_button.setTitleColor(UIColor.darkGray, for: .normal)
         }
-        
     }
     
-    func toggleHLMaths() {
-        if (hl_maths_added) {
+    func toggleHLMaths()
+    {
+        if (hl_maths_added)
+        {
             hl_maths_added = false
             hl_maths_button.setTitleColor(my_blue, for: .normal)
             hl_maths_button.isEnabled = true
-        } else {
+        }
+        else
+        {
             hl_maths_added = true
             higher_button.sendActions(for: .touchUpInside)
             hl_maths_button.setTitleColor(UIColor.darkGray, for: .normal)
@@ -287,11 +344,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func infoButton() {
+    func infoButton()
+    {
         
     }
-    
-
-
 }
 
