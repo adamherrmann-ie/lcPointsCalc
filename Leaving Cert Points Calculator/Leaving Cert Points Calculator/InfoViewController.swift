@@ -10,14 +10,14 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
-    @IBOutlet weak var percentageLabel: UILabel!
-    @IBOutlet weak var higherLabel: UILabel!
-    @IBOutlet weak var ordinaryLabel: UILabel!
+    @IBOutlet weak var percentage_label: UILabel!
+    @IBOutlet weak var higher_label: UILabel!
+    @IBOutlet weak var ordinary_label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        percentageLabel.textColor = UIColor.white
-        higherLabel.textColor = UIColor.white
-        ordinaryLabel.textColor = UIColor.white
+        percentage_label.textColor = UIColor.white
+        higher_label.textColor = UIColor.white
+        ordinary_label.textColor = UIColor.white
         // Do any additional setup after loading the view, typically from a nib.
     }
     

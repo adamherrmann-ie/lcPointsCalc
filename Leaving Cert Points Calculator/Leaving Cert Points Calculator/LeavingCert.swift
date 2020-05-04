@@ -13,13 +13,13 @@ class LeavingCert {
     var points_array = [Int]()
     var label_array = [String]()
     
-    func addSubject(points: Int, label: String) -> Int {
+    func add_subject(points: Int, label: String) -> Int {
         points_array.append(points)
         label_array.append(label)
-        return getTotalPoints()
+        return get_total_points()
     }
     
-    func getTotalPoints() -> Int {
+    func get_total_points() -> Int {
         
         var total_points = 0
         var max_subjects = 6
@@ -36,24 +36,23 @@ class LeavingCert {
                 break
             }
         }
-        
         return total_points
     }
     
-    func addMathsBonus() -> Int {
-        
-        return getTotalPoints()
+    func addMathsBonus() -> Int
+    {
+        return get_total_points()
     }
     
-    func reset() -> Int {
-        
+    func reset() -> Int
+    {
         points_array = [Int]()
         label_array = [String]()
-        
-        return getTotalPoints()
+        return get_total_points()
     }
     
-    func getSubjectCount() -> Int {
+    func get_subject_count() -> Int
+    {
         return points_array.count
     }
 }

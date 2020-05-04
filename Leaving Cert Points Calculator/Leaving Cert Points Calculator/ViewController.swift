@@ -17,14 +17,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var hl_maths_added = false
     let my_blue = UIColor(red: 30/255, green: 144/255, blue: 255/255, alpha: 1)
     
+    // Create Leaving Cert Object
     let leaving_cert = LeavingCert()
     
     @IBOutlet weak var points_label: UILabel!
-    
-    @IBOutlet weak var subjectsListTable: UITableView!
-    
-    @IBOutlet weak var subjectListLabel: UILabel!
-    
+    @IBOutlet weak var subjects_list_table: UITableView!
+    @IBOutlet weak var subject_list_label: UILabel!
     
     @IBOutlet weak var h1_button: UIButton!
     @IBOutlet weak var h2_button: UIButton!
@@ -46,8 +44,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         higher_button.isEnabled = false
-        subjectsListTable.backgroundColor = UIColor.black
-        subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
+        subjects_list_table.backgroundColor = UIColor.black
+        subject_list_label.text = ("Subject List (" + String(leaving_cert.get_subject_count()) + "):")
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,10 +75,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             leaving_cert.points_array.remove(at: indexPath.row)
             leaving_cert.label_array.remove(at: indexPath.row)
-            subjectsListTable.reloadData()
-            total_points = leaving_cert.getTotalPoints()
+            subjects_list_table.reloadData()
+            total_points = leaving_cert.get_total_points()
             points_label.text = String(total_points)
-            subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
+            subject_list_label.text = ("Subject List (" + String(leaving_cert.get_subject_count()) + "):")
             
         }
     }
@@ -91,83 +89,83 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 1:
             if hl_flag {
                 if hl_maths_flag {
-                    total_points = leaving_cert.addSubject(points: 125, label: "H1 + Maths Bonus: 125")
+                    total_points = leaving_cert.add_subject(points: 125, label: "H1 + Maths Bonus: 125")
                     toggleHLMaths()
                 } else {
-                    total_points = leaving_cert.addSubject(points: 100, label: "H1: 100")
+                    total_points = leaving_cert.add_subject(points: 100, label: "H1: 100")
                 }
             } else {
-                total_points = leaving_cert.addSubject(points: 56, label: "O1: 56")
+                total_points = leaving_cert.add_subject(points: 56, label: "O1: 56")
             }
         case 2:
             if hl_flag {
                 if hl_maths_flag {
-                    total_points = leaving_cert.addSubject(points: 113, label: "H2 + Maths Bonus: 113")
+                    total_points = leaving_cert.add_subject(points: 113, label: "H2 + Maths Bonus: 113")
                     toggleHLMaths()
                 } else {
-                    total_points = leaving_cert.addSubject(points: 88, label: "H2: 88")
+                    total_points = leaving_cert.add_subject(points: 88, label: "H2: 88")
                 }
             } else {
-                total_points = leaving_cert.addSubject(points: 46, label: "O2: 46")
+                total_points = leaving_cert.add_subject(points: 46, label: "O2: 46")
             }
         case 3:
             if hl_flag {
                 if hl_maths_flag {
-                    total_points = leaving_cert.addSubject(points: 102, label: "H3 + Maths Bonus: 102")
+                    total_points = leaving_cert.add_subject(points: 102, label: "H3 + Maths Bonus: 102")
                     toggleHLMaths()
                 } else {
-                    total_points = leaving_cert.addSubject(points: 77, label: "H3: 77")
+                    total_points = leaving_cert.add_subject(points: 77, label: "H3: 77")
                 }
             } else {
-                total_points = leaving_cert.addSubject(points: 37, label: "O3: 37")
+                total_points = leaving_cert.add_subject(points: 37, label: "O3: 37")
             }
         case 4:
             if hl_flag {
                 if hl_maths_flag {
-                    total_points = leaving_cert.addSubject(points: 91, label: "H4 + Maths Bonus: 91")
+                    total_points = leaving_cert.add_subject(points: 91, label: "H4 + Maths Bonus: 91")
                     toggleHLMaths()
                 } else {
-                    total_points = leaving_cert.addSubject(points: 66, label: "H4: 66")
+                    total_points = leaving_cert.add_subject(points: 66, label: "H4: 66")
                 }
             } else {
-                total_points = leaving_cert.addSubject(points: 28, label: "O4: 28")
+                total_points = leaving_cert.add_subject(points: 28, label: "O4: 28")
             }
         case 5:
             if hl_flag {
                 if hl_maths_flag {
-                    total_points = leaving_cert.addSubject(points: 81, label: "H5 + Maths Bonus: 81")
+                    total_points = leaving_cert.add_subject(points: 81, label: "H5 + Maths Bonus: 81")
                     toggleHLMaths()
                 } else {
-                    total_points = leaving_cert.addSubject(points: 56, label: "H5: 56")
+                    total_points = leaving_cert.add_subject(points: 56, label: "H5: 56")
                 }
             } else {
-                total_points = leaving_cert.addSubject(points: 20, label: "O5: 20")
+                total_points = leaving_cert.add_subject(points: 20, label: "O5: 20")
             }
         case 6:
             if hl_flag {
                 if hl_maths_flag {
-                    total_points = leaving_cert.addSubject(points: 71, label: "H6 + Maths Bonus: 71")
+                    total_points = leaving_cert.add_subject(points: 71, label: "H6 + Maths Bonus: 71")
                     toggleHLMaths()
                 } else {
-                    total_points = leaving_cert.addSubject(points: 46, label: "H6: 46")
+                    total_points = leaving_cert.add_subject(points: 46, label: "H6: 46")
                 }
             } else {
-                total_points = leaving_cert.addSubject(points: 12, label: "O6: 12")
+                total_points = leaving_cert.add_subject(points: 12, label: "O6: 12")
 
             }
         case 7:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 37, label: "H7: 37")
+                total_points = leaving_cert.add_subject(points: 37, label: "H7: 37")
             } else {
-                total_points = leaving_cert.addSubject(points: 0, label: "O7: 0")
+                total_points = leaving_cert.add_subject(points: 0, label: "O7: 0")
 
             }
         case 8:
             if hl_flag {
-                total_points = leaving_cert.addSubject(points: 0, label: "H8: 0")
+                total_points = leaving_cert.add_subject(points: 0, label: "H8: 0")
 
             } else {
-                total_points = leaving_cert.addSubject(points: 0, label: "O8: 0")
+                total_points = leaving_cert.add_subject(points: 0, label: "O8: 0")
 
             }
         case 20: // Ordinary Level
@@ -228,13 +226,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 toggleHLMaths()
             }
         case 13:        // Pass
-            total_points = leaving_cert.addSubject(points: 28, label: "LCVP Pass: 28")
+            total_points = leaving_cert.add_subject(points: 28, label: "LCVP Pass: 28")
             toggleLCVP()
         case 12:        // Merit
-            total_points = leaving_cert.addSubject(points: 46, label: "LCVP Merit: 46")
+            total_points = leaving_cert.add_subject(points: 46, label: "LCVP Merit: 46")
             toggleLCVP()
         case 11:        // Distinction
-            total_points = leaving_cert.addSubject(points: 66, label: "LCVP Distinction: 66")
+            total_points = leaving_cert.add_subject(points: 66, label: "LCVP Distinction: 66")
             toggleLCVP()
         case 35:
             infoButton()
@@ -244,8 +242,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             total_points = 0
         }
         points_label.text = String(total_points)
-        subjectsListTable.reloadData()
-        subjectListLabel.text = ("Subject List (" + String(leaving_cert.getSubjectCount()) + "):")
+        subjects_list_table.reloadData()
+        subject_list_label.text = ("Subject List (" + String(leaving_cert.get_subject_count()) + "):")
     }
     
     func shareButton() {
