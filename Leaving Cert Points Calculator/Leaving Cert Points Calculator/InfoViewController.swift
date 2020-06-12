@@ -15,9 +15,6 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var ordinary_label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        percentage_label.textColor = UIColor.white
-        higher_label.textColor = UIColor.white
-        ordinary_label.textColor = UIColor.white
         // Do any additional setup after loading the view, typically from a nib.
     }
     

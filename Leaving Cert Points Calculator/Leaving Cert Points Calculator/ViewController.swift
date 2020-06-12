@@ -45,7 +45,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         higher_button.isEnabled = false
-        subjects_list_table.backgroundColor = UIColor.black
         subject_list_label.text = ("Subject List (" + String(leaving_cert.get_subject_count()) + "):")
     }
 
@@ -65,8 +64,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = leaving_cert.label_array[indexPath.row]
-        cell.backgroundColor = UIColor.black
-        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
