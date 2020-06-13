@@ -15,7 +15,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var lcvp_flag = false
     var hl_maths_flag = false
     var hl_maths_added = false
-    let my_blue = UIColor(red: 30/255, green: 144/255, blue: 255/255, alpha: 1)
     
     // Create Leaving Cert Object
     let leaving_cert = LeavingCert()
@@ -219,7 +218,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if !(hl_maths_added)
             {
                 hl_maths_button.isEnabled = true
-                hl_maths_button.setTitleColor(my_blue, for: .normal)
+                hl_maths_button.setTitleColor(UIColor.systemBlue, for: .normal)
             }
             h1_button.setTitle("O1", for: .normal)
             h2_button.setTitle("O2", for: .normal)
@@ -248,7 +247,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if !(hl_maths_added)
             {
                 hl_maths_button.isEnabled = true
-                hl_maths_button.setTitleColor(my_blue, for: .normal)
+                hl_maths_button.setTitleColor(UIColor.systemBlue, for: .normal)
             }
             hl_maths_flag = false
             ordinary_button.isEnabled = true
@@ -306,11 +305,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             lcvp_flag = false
             merit_button.isEnabled = true
-            merit_button.setTitleColor(my_blue, for: .normal)
+            merit_button.setTitleColor(UIColor.systemBlue, for: .normal)
             distinction_button.isEnabled = true
-            distinction_button.setTitleColor(my_blue, for: .normal)
+            distinction_button.setTitleColor(UIColor.systemBlue, for: .normal)
             pass_button.isEnabled = true
-            pass_button.setTitleColor(my_blue, for: .normal)
+            pass_button.setTitleColor(UIColor.systemBlue, for: .normal)
         }
         else
         {
@@ -329,7 +328,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if (hl_maths_added)
         {
             hl_maths_added = false
-            hl_maths_button.setTitleColor(my_blue, for: .normal)
+            hl_maths_button.setTitleColor(UIColor.systemBlue, for: .normal)
             hl_maths_button.isEnabled = true
         }
         else
